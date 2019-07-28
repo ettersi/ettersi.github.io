@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en-gb">
+
+<head>
+
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+<!-- Enable responsiveness on mobile devices-->
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+<title>
+  Simon Etter
+</title>
+
+<!-- Bootstrap -->
+<link href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/paper/bootstrap.min.css" rel="stylesheet" integrity="sha384-awusxf8AUojygHf2+joICySzB780jVvQaVCAt1clU3QsyAitLGul28Qxb2r1e5g+" crossorigin="anonymous">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+<!-- Enable tooltips -->
+<script>
+$(function () {
+  $('[data-toggle="tooltip"]').tooltip()
+})
+</script>
+
+<!-- Custom tweaks -->
+<link rel="stylesheet" href=/tweaks/styles.css>
+<script src=/tweaks/scripts.js></script>
+
+<!-- Icons -->
+<link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+
+<!-- MathJax -->
+<script src='https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>
+
+</head>
+
+
+<body>
+
+<div class="container">
+    <div class="row">
+        <div class="col-lg-2 col-md-1"></div>
+        <div class="col-lg-8 col-md-10">
+            <div style="height: 10rem" class="hidden-xs"></div>
+<div style="height: 2rem" class="visible-xs-block"></div>
+
+<div class="row" style="margin-bottom: 4rem;">
+<div class="col-sm-4">
+<img class="img-rounded" style="width:230px;" src="simon.jpg" alt="" />
+</div>
+<div class="col-sm-8">
+
+    <div style="height: 4rem" class="hidden-xs"></div>
+    <div style="height: 2rem" class="visible-xs-block"></div>
+
+    <h1 style="margin-top: 0rem">Simon Etter</h1>
+
+    <p>Peng Tsu Ann Assistant Professor<br />
+<a href="http://ww1.math.nus.edu.sg/">Mathematics Department</a> <br />
+<a href="http://www.nus.edu.sg/">National University of Singapore</a></p>
+
+  </div>
+</div>
+
+<h2 id="curriculum-vitae">Curriculum Vitae</h2>
+
+<dl class="dl-horizontal">
+  <dt>2019 - Present</dt>
+  <dd>
+    <ul class="list-unstyled">
+      <li><strong>Peng Tsu Ann Assistant Professor</strong> at National University of Singapore</li>
+    </ul>
+  </dd>
+  <dt>2015 - 2019</dt>
+  <dd>
+    <ul class="list-unstyled">
+      <li><strong>PhD in Mathematics</strong> at University of Warwick (United Kingdom)</li>
+      <li>Thesis: Polynomial and Rational Approximation for Electronic Structure Calculations</li>
+      <li>Advisor: <a href="http://homepages.warwick.ac.uk/staff/C.Ortner">Christoph Ortner</a></li>
+    </ul>
+  </dd>
+  <dt>2013 - 2015</dt>
+  <dd>
+    <ul class="list-unstyled">
+      <li><strong>MSc in Computational Science and Engineering</strong> at ETH Zurich (Switzerland)</li>
+      <li>Thesis: <a href="pdf/msc.pdf">Parallel Tensor-Formatted Numerics for the Chemical Master Equation</a></li>
+      <li>Advisors: <a href="https://www.linkedin.com/in/rngantner">Robert Gantner</a>, <a href="http://web.stanford.edu/~kazeev/">Vladimir Kazeev</a>, <a href="http://www.sam.math.ethz.ch/~schwab">Christoph Schwab</a></li>
+    </ul>
+  </dd>
+  <dt>2010 - 2013</dt>
+  <dd>
+    <ul class="list-unstyled">
+      <li><strong>BSc in Computational Science and Engineering</strong> at ETH Zurich (Switzerland)</li>
+      <li>Thesis: <a href="pdf/bsc.pdf">FFT-Based Ridgelets For Radiative Transport</a></li>
+      <li>Advisors: Axel Obermeier, <a href="http://mat.univie.ac.at/~grohs/">Philipp Grohs</a></li>
+    </ul>
+  </dd>
+</dl>
+
+<h2 id="bibliography">Bibliography</h2>
+
+<h3 id="preprints">Preprints</h3>
+<ul class="bibliography"><li><div class="reference">
+  <div id="EMLO19"><div class="csl-block"><b>Modeling and Computation of Kubo Conductivity for 2D Incommensurate Bilayers</b></div><div class="csl-block">S. Etter, D. Massatt, M. Luskin, C. Ortner</div><div class="csl-block">submitted (2019)</div></div>
+
+  <ul class="list-inline">
+  
+  <li><a data-toggle="collapse" href="#EMLO19_abstract" onclick="$(this).toggleClass('active')">Abstract</a></li>
+  
+  
+  <li><a href="/linked/EMLO19.pdf">PDF</a></li>
+  
+  
+  <li><a href="https://arxiv.org/abs/1907.01314">arXiv</a></li>
+  
+  
+  </ul>
+</div>
+
+
+<div class="collapse" id="EMLO19_abstract">
+  <div class="well">
+    This paper presents a unified approach to the modeling and computation of the Kubo conductivity of incommensurate bilayer heterostructures at finite temperature. Firstly, we derive an expression for the large-body limit of Kubo-Greenwood conductivity in terms of an integral of the conductivity function with respect to a current-current correlation measure. We then observe that the incommensurate structure can be exploited to decompose the current-current correlation measure into local contribution and deduce an approximation scheme which is exponentially convergent in terms of domain size. Secondly, we analyze the cost of computing local conductivities via Chebyshev approximation. Our main finding is that if the inverse temperature \(\beta\) is sufficiently small compared to the inverse relaxation time \(\eta\), namely \(\beta \lesssim \eta^{-1/2}\), then the dominant computational cost is \(\mathcal{O}(\eta^{−3/2})\) inner products for a suitably truncated Chebyshev series, which significantly improves on the \(\mathcal{O}(\eta^{−2})\) inner products required by a naive Chebyshev approximation. Thirdly, we propose a rational approximation scheme for the low temperature regime \(\eta^{-1/2} \lesssim \beta\), where the cost of the polynomial method increases up to \(\mathcal{O}(\beta^2)\), but the rational scheme scales much more mildly with respect to \(\beta\).
+  </div>
+</div>
+
+</li></ul>
+
+<h3 id="papers">Papers</h3>
+<ul class="bibliography"><li><div class="reference">
+  <div id="Ett16"><div class="csl-block"><b>Parallel ALS Algorithm for Solving Linear Systems in the Hierarchical Tucker Representation</b></div><div class="csl-block">S. Etter</div><div class="csl-block">SIAM Journal on Scientific Computing (2016), 38:4, A2585–A2609</div></div>
+
+  <ul class="list-inline">
+  
+  <li><a data-toggle="collapse" href="#Ett16_abstract" onclick="$(this).toggleClass('active')">Abstract</a></li>
+  
+  
+  <li><a href="/linked/Ett16.pdf">PDF</a></li>
+  
+  
+  
+  <li><a href="http://doi.org/10.1137/15M1038852">DOI</a></li>
+  
+  </ul>
+</div>
+
+
+<div class="collapse" id="Ett16_abstract">
+  <div class="well">
+    Tensor network formats are an efficient tool for numerical computations in many dimensions, yet even this tool often becomes too time- and memory-consuming for a single compute node when applied to problems of scientific interest. Intending to overcome such limitations, we present and analyze a parallelization scheme for algorithms based on the hierarchical Tucker representation which distributes the network vertices and their associated computations over a set of distributed-memory processors. We then propose a modified version of the alternating least squares algorithm for solving linear systems amenable to parallelization according to the aforementioned scheme, and highlight technical considerations important for obtaining an efficient and stable implementation. Our numerical experiments support the theoretical assertion that the parallel scaling of this algorithm is constrained only by the dimensionality and the rank uniformity of the targeted problem.
+  </div>
+</div>
+
+</li>
+<li><div class="reference">
+  <div id="EDK16"><div class="csl-block"><b>Erratum: Two-Level QTT-Tucker Format for Optimized Tensor Calculus</b></div><div class="csl-block">S. Etter, S. Dolgov, B.N. Khoromskij</div><div class="csl-block">SIAM Journal on Matrix Analysis and Applications (2016), 37:2, 818–822</div></div>
+
+  <ul class="list-inline">
+  
+  <li><a data-toggle="collapse" href="#EDK16_abstract" onclick="$(this).toggleClass('active')">Abstract</a></li>
+  
+  
+  <li><a href="/linked/EDK16.pdf">PDF</a></li>
+  
+  
+  
+  <li><a href="http://doi.org/10.1137/15M104089X">DOI</a></li>
+  
+  </ul>
+</div>
+
+
+<div class="collapse" id="EDK16_abstract">
+  <div class="well">
+    We prove by counterexample that the bound on the rounding error given in Theorem 5.2 of [Dolgov and Khoromskij, SIAM J. Matrix Anal. Appl., 34(2013), pp. 593-623] does not hold in general. A correct version of the error bound as well as a modified rounding algorithm for which the original bound holds are presented.
+  </div>
+</div>
+
+</li>
+<li><div class="reference">
+  <div id="EGO15"><div class="csl-block"><b>FFRT: A Fast Finite Ridgelet Transform for Radiative Transport</b></div><div class="csl-block">S. Etter, P. Grohs, A. Obermeier</div><div class="csl-block">SIAM Journal on Multiscale Modeling &amp; Simulation (2015), 13:1, 1–42</div></div>
+
+  <ul class="list-inline">
+  
+  <li><a data-toggle="collapse" href="#EGO15_abstract" onclick="$(this).toggleClass('active')">Abstract</a></li>
+  
+  
+  <li><a href="/linked/EGO15.pdf">PDF</a></li>
+  
+  
+  
+  <li><a href="http://doi.org/10.1137/140977722">DOI</a></li>
+  
+  </ul>
+</div>
+
+
+<div class="collapse" id="EGO15_abstract">
+  <div class="well">
+    This paper introduces an FFT-based implementation of a fast finite ridgelet transform which we call FFRT. Inspired by recent work where it was shown that ridgelet discretizations of linear transport equations can be easily preconditioned by diagonal preconditioning, we use the FFRT for the numerical solution of such equations. Combining this FFRT-based method with a sparse collocation scheme, we construct a novel solver for the radiative transport equation which results in uniformly well-conditioned linear systems.
+  </div>
+</div>
+
+</li></ul>
+
+<h3 id="talks-and-posters">Talks and Posters</h3>
+<ul class="bibliography"><li><div class="reference">
+  <div id="LabelledModes"><div class="csl-block"><b>Labelled Modes - A New Notation for Tensor Networks</b></div><div class="csl-block">GAMM Annual Meeting, Weimar, Germany (2017)</div></div>
+
+  <ul class="list-inline">
+  
+  
+  <li><a href="/linked/LabelledModes.pdf">PDF</a></li>
+  
+  
+  
+  </ul>
+</div>
+
+
+</li>
+<li><div class="reference">
+  <div id="ExponentiallyLocalisedMatrices"><div class="csl-block"><b>Exponentially Localised Matrices</b></div><div class="csl-block">British Applied Mathematics Colloquium (2017)</div></div>
+
+  <ul class="list-inline">
+  
+  
+  <li><a href="/linked/ExponentiallyLocalisedMatrices.pdf">PDF</a></li>
+  
+  
+  
+  </ul>
+</div>
+
+
+</li>
+<li><div class="reference">
+  <div id="CME"><div class="csl-block"><b>Parallel Tensor-Formatted Numerics for the Chemical Master Equation</b></div><div class="csl-block">University of Warwick, United Kingdom (2015)</div></div>
+
+  <ul class="list-inline">
+  
+  
+  <li><a href="/linked/CME.pdf">PDF</a></li>
+  
+  
+  
+  </ul>
+</div>
+
+
+</li></ul>
+
+
+            <div class="text-center" style="margin-top: 4rem; margin-bottom: 4rem; line-height: 1.4;">
+                <small class="text-muted">
+                    Last updated on 28 July 2019.
+                </small>
+            </div>
+        </div>
+        <div class="col-lg-2 col-md-1"></div>
+    </div>
+</div>
+
+</body>
+</html>
