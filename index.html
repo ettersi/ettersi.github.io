@@ -32,7 +32,9 @@ $(function () {
 <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
 
 <!-- MathJax -->
-<script src='https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>
+<script type="text/javascript" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML">
+</script>
 
 </head>
 
@@ -52,14 +54,29 @@ $(function () {
 </div>
 <div class="col-sm-8">
 
-    <div style="height: 4rem" class="hidden-xs"></div>
+    <div style="height: 2rem" class="hidden-xs"></div>
     <div style="height: 2rem" class="visible-xs-block"></div>
 
     <h1 style="margin-top: 0rem">Simon Etter</h1>
 
-    <p>Peng Tsu Ann Assistant Professor<br />
-<a href="http://ww1.math.nus.edu.sg/">Mathematics Department</a> <br />
-<a href="http://www.nus.edu.sg/">National University of Singapore</a></p>
+    <p style="line-height: 1.5">
+Peng Tsu Ann Assistant Professor<br />
+Department of Mathematics<br />
+National University of Singapore
+</p>
+
+    <div class="btn-group">
+  
+  <a class="btn btn-default" href="mailto:Simon Etter &lt;ettersi@nus.edu.sg&gt;" data-toggle="tooltip" title="ettersi@nus.edu.sg" data-placement="bottom">
+    <i class="fa fa-envelope"></i>  eMail
+  </a>
+  <a class="btn btn-default" href="https://github.com/ettersi" data-toggle="tooltip" title="ettersi" data-placement="bottom">
+    <i class="fa fa-github-square"></i> GitHub
+  </a>
+  <a class="btn btn-default" href="" data-toggle="tooltip" title="S17-05-08" data-placement="bottom">
+    <i class="fa fa-users"></i> Office
+  </a>
+</div>
 
   </div>
 </div>
@@ -103,7 +120,7 @@ $(function () {
 
 <h3 id="preprints">Preprints</h3>
 <ul class="bibliography"><li><div class="reference">
-  <div id="EMLO19"><div class="csl-block"><b>Modeling and Computation of Kubo Conductivity for 2D Incommensurate Bilayers</b></div><div class="csl-block">S. Etter, D. Massatt, M. Luskin, C. Ortner</div><div class="csl-block">submitted (2019)</div></div>
+  <div id="EMLO19"><div class="csl-block"><b>Modeling and computation of Kubo conductivity for 2D incommensurate bilayers</b></div><div class="csl-block">S. Etter, D. Massatt, M. Luskin, C. Ortner</div><div class="csl-block">submitted (2019)</div></div>
 
   <ul class="list-inline">
   
@@ -122,7 +139,7 @@ $(function () {
 
 <div class="collapse" id="EMLO19_abstract">
   <div class="well">
-    This paper presents a unified approach to the modeling and computation of the Kubo conductivity of incommensurate bilayer heterostructures at finite temperature. Firstly, we derive an expression for the large-body limit of Kubo-Greenwood conductivity in terms of an integral of the conductivity function with respect to a current-current correlation measure. We then observe that the incommensurate structure can be exploited to decompose the current-current correlation measure into local contribution and deduce an approximation scheme which is exponentially convergent in terms of domain size. Secondly, we analyze the cost of computing local conductivities via Chebyshev approximation. Our main finding is that if the inverse temperature \(\beta\) is sufficiently small compared to the inverse relaxation time \(\eta\), namely \(\beta \lesssim \eta^{-1/2}\), then the dominant computational cost is \(\mathcal{O}(\eta^{−3/2})\) inner products for a suitably truncated Chebyshev series, which significantly improves on the \(\mathcal{O}(\eta^{−2})\) inner products required by a naive Chebyshev approximation. Thirdly, we propose a rational approximation scheme for the low temperature regime \(\eta^{-1/2} \lesssim \beta\), where the cost of the polynomial method increases up to \(\mathcal{O}(\beta^2)\), but the rational scheme scales much more mildly with respect to \(\beta\).
+    This paper presents a unified approach to the modeling and computation of the Kubo conductivity of incommensurate bilayer heterostructures at finite temperature. Firstly, we derive an expression for the large-body limit of Kubo-Greenwood conductivity in terms of an integral of the conductivity function with respect to a current-current correlation measure. We then observe that the incommensurate structure can be exploited to decompose the current-current correlation measure into local contribution and deduce an approximation scheme which is exponentially convergent in terms of domain size. Secondly, we analyze the cost of computing local conductivities via Chebyshev approximation. Our main finding is that if the inverse temperature $\backslash$($\backslash$beta$\backslash$) is sufficiently small compared to the inverse relaxation time $\backslash$($\backslash$eta$\backslash$), namely $\backslash$($\backslash$beta $\backslash$lesssim $\backslash$eta{\^{}}{\{}-1/2{\}}$\backslash$), then the dominant computational cost is $\backslash$($\backslash$mathcal{\{}O{\}}($\backslash$eta{\^{}}{\{}−3/2{\}})$\backslash$) inner products for a suitably truncated Chebyshev series, which significantly improves on the $\backslash$($\backslash$mathcal{\{}O{\}}($\backslash$eta{\^{}}{\{}−2{\}})$\backslash$) inner products required by a naive Chebyshev approximation. Thirdly, we propose a rational approximation scheme for the low temperature regime $\backslash$($\backslash$eta{\^{}}{\{}-1/2{\}} $\backslash$lesssim $\backslash$beta$\backslash$), where the cost of the polynomial method increases up to $\backslash$($\backslash$mathcal{\{}O{\}}($\backslash$beta{\^{}}2)$\backslash$), but the rational scheme scales much more mildly with respect to $\backslash$($\backslash$beta$\backslash$).
   </div>
 </div>
 
@@ -130,31 +147,6 @@ $(function () {
 
 <h3 id="papers">Papers</h3>
 <ul class="bibliography"><li><div class="reference">
-  <div id="Ett16"><div class="csl-block"><b>Parallel ALS Algorithm for Solving Linear Systems in the Hierarchical Tucker Representation</b></div><div class="csl-block">S. Etter</div><div class="csl-block">SIAM Journal on Scientific Computing (2016), 38:4, A2585–A2609</div></div>
-
-  <ul class="list-inline">
-  
-  <li><a data-toggle="collapse" href="#Ett16_abstract" onclick="$(this).toggleClass('active')">Abstract</a></li>
-  
-  
-  <li><a href="/linked/Ett16.pdf">PDF</a></li>
-  
-  
-  
-  <li><a href="http://doi.org/10.1137/15M1038852">DOI</a></li>
-  
-  </ul>
-</div>
-
-
-<div class="collapse" id="Ett16_abstract">
-  <div class="well">
-    Tensor network formats are an efficient tool for numerical computations in many dimensions, yet even this tool often becomes too time- and memory-consuming for a single compute node when applied to problems of scientific interest. Intending to overcome such limitations, we present and analyze a parallelization scheme for algorithms based on the hierarchical Tucker representation which distributes the network vertices and their associated computations over a set of distributed-memory processors. We then propose a modified version of the alternating least squares algorithm for solving linear systems amenable to parallelization according to the aforementioned scheme, and highlight technical considerations important for obtaining an efficient and stable implementation. Our numerical experiments support the theoretical assertion that the parallel scaling of this algorithm is constrained only by the dimensionality and the rank uniformity of the targeted problem.
-  </div>
-</div>
-
-</li>
-<li><div class="reference">
   <div id="EDK16"><div class="csl-block"><b>Erratum: Two-Level QTT-Tucker Format for Optimized Tensor Calculus</b></div><div class="csl-block">S. Etter, S. Dolgov, B.N. Khoromskij</div><div class="csl-block">SIAM Journal on Matrix Analysis and Applications (2016), 37:2, 818–822</div></div>
 
   <ul class="list-inline">
@@ -180,7 +172,32 @@ $(function () {
 
 </li>
 <li><div class="reference">
-  <div id="EGO15"><div class="csl-block"><b>FFRT: A Fast Finite Ridgelet Transform for Radiative Transport</b></div><div class="csl-block">S. Etter, P. Grohs, A. Obermeier</div><div class="csl-block">SIAM Journal on Multiscale Modeling &amp; Simulation (2015), 13:1, 1–42</div></div>
+  <div id="Ett16"><div class="csl-block"><b>Parallel ALS Algorithm for Solving Linear Systems in the Hierarchical Tucker Representation</b></div><div class="csl-block">S. Etter</div><div class="csl-block">SIAM Journal on Scientific Computing (2016), 38:4, A2585–A2609</div></div>
+
+  <ul class="list-inline">
+  
+  <li><a data-toggle="collapse" href="#Ett16_abstract" onclick="$(this).toggleClass('active')">Abstract</a></li>
+  
+  
+  <li><a href="/linked/Ett16.pdf">PDF</a></li>
+  
+  
+  
+  <li><a href="http://doi.org/10.1137/15M1038852">DOI</a></li>
+  
+  </ul>
+</div>
+
+
+<div class="collapse" id="Ett16_abstract">
+  <div class="well">
+    Tensor network formats are an efficient tool for numerical computations in many dimensions, yet even this tool often becomes too time- and memory-consuming for a single compute node when applied to problems of scientific interest. Intending to overcome such limitations, we present and analyze a parallelization scheme for algorithms based on the hierarchical Tucker representation which distributes the network vertices and their associated computations over a set of distributed-memory processors. We then propose a modified version of the alternating least squares algorithm for solving linear systems amenable to parallelization according to the aforementioned scheme, and highlight technical considerations important for obtaining an efficient and stable implementation. Our numerical experiments support the theoretical assertion that the parallel scaling of this algorithm is constrained only by the dimensionality and the rank uniformity of the targeted problem.
+  </div>
+</div>
+
+</li>
+<li><div class="reference">
+  <div id="EGO15"><div class="csl-block"><b>FFRT: A Fast Finite Ridgelet Transform for Radiative Transport</b></div><div class="csl-block">S. Etter, P. Grohs, A. Obermeier</div><div class="csl-block">SIAM Journal on Multiscale Modeling {\&amp;} Simulation (2015), 13:1, 1–42</div></div>
 
   <ul class="list-inline">
   
@@ -255,7 +272,7 @@ $(function () {
 
             <div class="text-center" style="margin-top: 4rem; margin-bottom: 4rem; line-height: 1.4;">
                 <small class="text-muted">
-                    Last updated on 28 July 2019.
+                    Last updated on 05 August 2019.
                 </small>
             </div>
         </div>

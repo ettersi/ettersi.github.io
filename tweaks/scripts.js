@@ -130,7 +130,7 @@
   var old = $.fn.collabsibletab
 
   $.fn.collabsibletab             = Plugin
-  $.fn.collabsibletab.Constructor = Tab
+  $.fn.collabsibletab.Constructor = CollabsibleTab
 
 
   // TAB NO CONFLICT
