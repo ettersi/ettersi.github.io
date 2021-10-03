@@ -54,15 +54,13 @@ $(function () {
 </div>
 <div class="col-sm-8">
 
-    <div style="height: 2rem" class="hidden-xs"></div>
+    <div style="height: 5rem" class="hidden-xs"></div>
     <div style="height: 2rem" class="visible-xs-block"></div>
 
     <h1 style="margin-top: 0rem">Simon Etter</h1>
 
     <p style="line-height: 1.5">
-Peng Tsu Ann Assistant Professor<br />
-Department of Mathematics<br />
-National University of Singapore
+Mathematician, Software Engineer and Julia Enthusiast
 </p>
 
     <div class="btn-group">
@@ -73,9 +71,7 @@ National University of Singapore
   <a class="btn btn-default" href="https://github.com/ettersi" data-toggle="tooltip" title="ettersi" data-placement="bottom">
     <i class="fa fa-github-square"></i> GitHub
   </a>
-  <a class="btn btn-default" href="" data-toggle="tooltip" title="S17-05-08" data-placement="bottom">
-    <i class="fa fa-users"></i> Office
-  </a>
+  
 </div>
 
   </div>
@@ -83,12 +79,20 @@ National University of Singapore
 
 <h2 id="curriculum-vitae">Curriculum Vitae</h2>
 
-<dl class="dl-horizontal">
-  <dt>2019 - Present</dt>
+<dl class="dl-horizontal curriculum-vitae">
+  <dt>2021 - 2021</dt>
+  <dd>
+    <ul class="list-unstyled">
+      <li><strong>Algorithms Engineer</strong> at <a href="https://www.synchronous.ai/">Synchronous Technologies</a></li>
+      <li>Developed and implemented algorithms and data structures for factory scheduling.</li>
+    </ul>
+  </dd>
+  <dt>2019 - 2021</dt>
   <dd>
     <ul class="list-unstyled">
       <li><strong>Peng Tsu Ann Assistant Professor</strong> at National University of Singapore</li>
-      <li>Group of <a href="https://haizhaoyang.github.io/">Haizhao Yang</a></li>
+      <li>Research: Fast solvers for sparse linear systems</li>
+      <li>Teaching: <a href="https://github.com/ettersi/ComputationalMathematics">Computational Mathematics</a>, <a href="https://github.com/ettersi/NumericalAnalysisII">Numerical Analysis II</a></li>
     </ul>
   </dd>
   <dt>2015 - 2019</dt>
@@ -119,16 +123,43 @@ National University of Singapore
 
 <h2 id="bibliography">Bibliography</h2>
 
-<h3 id="preprints">Preprints</h3>
+<h3 id="papers">Papers</h3>
 <ul class="bibliography"><li><div class="reference">
-  <div id="Etter2020"><div class="csl-block"><b>Incomplete selected inversion for linear-scaling electronic structure calculations</b></div><div class="csl-block">S. Etter</div><div class="csl-block">Submitted (2020)</div></div>
+  <div id="EMLO20"><div class="csl-block"><b>Modeling and Computation of Kubo Conductivity for Two-Dimensional Incommensurate Bilayers</b></div><div class="csl-block">S. Etter, D. Massatt, M. Luskin, C. Ortner</div><div class="csl-block">Multiscale Modeling &amp; Simulation (2020), 18:4, 1525–1564</div></div>
 
   <ul class="list-inline">
   
-  <li><a data-toggle="collapse" href="#Etter2020_abstract" onclick="$(this).toggleClass('active')">Abstract</a></li>
+  <li><a data-toggle="collapse" href="#EMLO20_abstract" onclick="$(this).toggleClass('active')">Abstract</a></li>
   
   
-  <li><a href="/linked/Etter2020.pdf">PDF</a></li>
+  <li><a href="/linked/EMLO20.pdf">PDF</a></li>
+  
+  
+  <li><a href="https://arxiv.org/abs/1907.01314">arXiv</a></li>
+  
+  
+  <li><a href="http://doi.org/10.1137/19M1273499">DOI</a></li>
+  
+  </ul>
+</div>
+
+
+<div class="collapse" id="EMLO20_abstract">
+  <div class="well">
+    This paper presents a unified approach to the modeling and computation of the Kubo conductivity of incommensurate bilayer heterostructures at finite temperature. Firstly, we derive an expression for the large-body limit of Kubo-Greenwood conductivity in terms of an integral of the conductivity function with respect to a current-current correlation measure. We then observe that the incommensurate structure can be exploited to decompose the current-current correlation measure into local contribution and deduce an approximation scheme which is exponentially convergent in terms of domain size. Secondly, we analyze the cost of computing local conductivities via Chebyshev approximation. Our main finding is that if the inverse temperature \(\beta\) is sufficiently small compared to the inverse relaxation time \(\eta\), namely \(\beta \lesssim \eta^{-1/2}\), then the dominant computational cost is \(\mathcal{O}(\eta^{−3/2})\) inner products for a suitably truncated Chebyshev series, which significantly improves on the \(\mathcal{O}(\eta^{−2})\) inner products required by a naive Chebyshev approximation. Thirdly, we propose a rational approximation scheme for the low temperature regime \(\eta^{-1/2} \lesssim \beta\), where the cost of the polynomial method increases up to \(\mathcal{O}(\beta^2)\), but the rational scheme scales much more mildly with respect to \(\beta\).
+  </div>
+</div>
+
+</li>
+<li><div class="reference">
+  <div id="Ett20"><div class="csl-block"><b>Incomplete selected inversion for linear-scaling electronic structure calculations</b></div><div class="csl-block">S. Etter</div><div class="csl-block">ArXiv (2020)</div></div>
+
+  <ul class="list-inline">
+  
+  <li><a data-toggle="collapse" href="#Ett20_abstract" onclick="$(this).toggleClass('active')">Abstract</a></li>
+  
+  
+  <li><a href="/linked/Ett20.pdf">PDF</a></li>
   
   
   <li><a href="https://arxiv.org/abs/2001.06211">arXiv</a></li>
@@ -138,61 +169,9 @@ National University of Singapore
 </div>
 
 
-<div class="collapse" id="Etter2020_abstract">
+<div class="collapse" id="Ett20_abstract">
   <div class="well">
     Pole Expansion and Selected Inversion (PEXSI) is an efficient scheme for evaluating selected entries of functions of large sparse matrices as required e.g. in electronic structure algorithms. We show that the triangular factorizations computed by the PEXSI scheme exhibit a localization property similar to that of matrix functions, and we present a modified PEXSI algorithm which exploits this observation to achieve linear scaling. To the best of our knowledge, the resulting incomplete PEXSI (iPEXSI) algorithm is the first linear-scaling algorithm which scales provably better than cubically even in the absence of localization, and we hope that this will help to further lower the critical system size where linear-scaling algorithms begin to outperform the diagonalization algorithm.
-  </div>
-</div>
-
-</li>
-<li><div class="reference">
-  <div id="EMLO19"><div class="csl-block"><b>Modeling and computation of Kubo conductivity for 2D incommensurate bilayers</b></div><div class="csl-block">S. Etter, D. Massatt, M. Luskin, C. Ortner</div><div class="csl-block">Submitted (2019)</div></div>
-
-  <ul class="list-inline">
-  
-  <li><a data-toggle="collapse" href="#EMLO19_abstract" onclick="$(this).toggleClass('active')">Abstract</a></li>
-  
-  
-  <li><a href="/linked/EMLO19.pdf">PDF</a></li>
-  
-  
-  <li><a href="https://arxiv.org/abs/1907.01314">arXiv</a></li>
-  
-  
-  </ul>
-</div>
-
-
-<div class="collapse" id="EMLO19_abstract">
-  <div class="well">
-    This paper presents a unified approach to the modeling and computation of the Kubo conductivity of incommensurate bilayer heterostructures at finite temperature. Firstly, we derive an expression for the large-body limit of Kubo-Greenwood conductivity in terms of an integral of the conductivity function with respect to a current-current correlation measure. We then observe that the incommensurate structure can be exploited to decompose the current-current correlation measure into local contribution and deduce an approximation scheme which is exponentially convergent in terms of domain size. Secondly, we analyze the cost of computing local conductivities via Chebyshev approximation. Our main finding is that if the inverse temperature \(\beta\) is sufficiently small compared to the inverse relaxation time \(\eta\), namely \(\beta \lesssim \eta^{-1/2}\), then the dominant computational cost is \(\mathcal{O}(\eta^{−3/2})\) inner products for a suitably truncated Chebyshev series, which significantly improves on the \(\mathcal{O}(\eta^{−2})\) inner products required by a naive Chebyshev approximation. Thirdly, we propose a rational approximation scheme for the low temperature regime \(\eta^{-1/2} \lesssim \beta\), where the cost of the polynomial method increases up to \(\mathcal{O}(\beta^2)\), but the rational scheme scales much more mildly with respect to \(\beta\).
-  </div>
-</div>
-
-</li></ul>
-
-<h3 id="papers">Papers</h3>
-<ul class="bibliography"><li><div class="reference">
-  <div id="Ett16"><div class="csl-block"><b>Parallel ALS algorithm for solving linear systems in the hierarchical Tucker representation</b></div><div class="csl-block">S. Etter</div><div class="csl-block">SIAM Journal on Scientific Computing (2016), 38:4, A2585–A2609</div></div>
-
-  <ul class="list-inline">
-  
-  <li><a data-toggle="collapse" href="#Ett16_abstract" onclick="$(this).toggleClass('active')">Abstract</a></li>
-  
-  
-  <li><a href="/linked/Ett16.pdf">PDF</a></li>
-  
-  
-  
-  <li><a href="http://doi.org/10.1137/15M1038852">DOI</a></li>
-  
-  </ul>
-</div>
-
-
-<div class="collapse" id="Ett16_abstract">
-  <div class="well">
-    Tensor network formats are an efficient tool for numerical computations in many dimensions, yet even this tool often becomes too time- and memory-consuming for a single compute node when applied to problems of scientific interest. Intending to overcome such limitations, we present and analyze a parallelization scheme for algorithms based on the hierarchical Tucker representation which distributes the network vertices and their associated computations over a set of distributed-memory processors. We then propose a modified version of the alternating least squares algorithm for solving linear systems amenable to parallelization according to the aforementioned scheme, and highlight technical considerations important for obtaining an efficient and stable implementation. Our numerical experiments support the theoretical assertion that the parallel scaling of this algorithm is constrained only by the dimensionality and the rank uniformity of the targeted problem.
   </div>
 </div>
 
@@ -218,6 +197,31 @@ National University of Singapore
 <div class="collapse" id="EDK16_abstract">
   <div class="well">
     We prove by counterexample that the bound on the rounding error given in Theorem 5.2 of [Dolgov and Khoromskij, SIAM J. Matrix Anal. Appl., 34(2013), pp. 593-623] does not hold in general. A correct version of the error bound as well as a modified rounding algorithm for which the original bound holds are presented.
+  </div>
+</div>
+
+</li>
+<li><div class="reference">
+  <div id="Ett16"><div class="csl-block"><b>Parallel ALS algorithm for solving linear systems in the hierarchical Tucker representation</b></div><div class="csl-block">S. Etter</div><div class="csl-block">SIAM Journal on Scientific Computing (2016), 38:4, A2585–A2609</div></div>
+
+  <ul class="list-inline">
+  
+  <li><a data-toggle="collapse" href="#Ett16_abstract" onclick="$(this).toggleClass('active')">Abstract</a></li>
+  
+  
+  <li><a href="/linked/Ett16.pdf">PDF</a></li>
+  
+  
+  
+  <li><a href="http://doi.org/10.1137/15M1038852">DOI</a></li>
+  
+  </ul>
+</div>
+
+
+<div class="collapse" id="Ett16_abstract">
+  <div class="well">
+    Tensor network formats are an efficient tool for numerical computations in many dimensions, yet even this tool often becomes too time- and memory-consuming for a single compute node when applied to problems of scientific interest. Intending to overcome such limitations, we present and analyze a parallelization scheme for algorithms based on the hierarchical Tucker representation which distributes the network vertices and their associated computations over a set of distributed-memory processors. We then propose a modified version of the alternating least squares algorithm for solving linear systems amenable to parallelization according to the aforementioned scheme, and highlight technical considerations important for obtaining an efficient and stable implementation. Our numerical experiments support the theoretical assertion that the parallel scaling of this algorithm is constrained only by the dimensionality and the rank uniformity of the targeted problem.
   </div>
 </div>
 
@@ -250,12 +254,12 @@ National University of Singapore
 
 <h3 id="talks-and-posters">Talks and Posters</h3>
 <ul class="bibliography"><li><div class="reference">
-  <div id="ExponentiallyLocalisedMatrices"><div class="csl-block"><b>Exponentially Localised Matrices</b></div><div class="csl-block">British Applied Mathematics Colloquium (2017)</div></div>
+  <div id="LabelledModes"><div class="csl-block"><b>Labelled Modes - A New Notation for Tensor Networks</b></div><div class="csl-block">GAMM Annual Meeting, Weimar, Germany (2017)</div></div>
 
   <ul class="list-inline">
   
   
-  <li><a href="/linked/ExponentiallyLocalisedMatrices.pdf">PDF</a></li>
+  <li><a href="/linked/LabelledModes.pdf">PDF</a></li>
   
   
   
@@ -265,12 +269,12 @@ National University of Singapore
 
 </li>
 <li><div class="reference">
-  <div id="LabelledModes"><div class="csl-block"><b>Labelled Modes - A New Notation for Tensor Networks</b></div><div class="csl-block">GAMM Annual Meeting, Weimar, Germany (2017)</div></div>
+  <div id="ExponentiallyLocalisedMatrices"><div class="csl-block"><b>Exponentially Localised Matrices</b></div><div class="csl-block">British Applied Mathematics Colloquium (2017)</div></div>
 
   <ul class="list-inline">
   
   
-  <li><a href="/linked/LabelledModes.pdf">PDF</a></li>
+  <li><a href="/linked/ExponentiallyLocalisedMatrices.pdf">PDF</a></li>
   
   
   
@@ -298,7 +302,7 @@ National University of Singapore
 
             <div class="text-center" style="margin-top: 4rem; margin-bottom: 4rem; line-height: 1.4;">
                 <small class="text-muted">
-                    Last updated on 16 June 2020.
+                    Last updated on 03 October 2021.
                 </small>
             </div>
         </div>
