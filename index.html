@@ -60,7 +60,7 @@ $(function () {
     <h1 style="margin-top: 0rem">Simon Etter</h1>
 
     <p style="line-height: 1.5">
-Mathematician, Software Engineer and Julia Enthusiast
+Mathematician &amp; Software Engineer
 </p>
 
     <div class="btn-group">
@@ -80,17 +80,24 @@ Mathematician, Software Engineer and Julia Enthusiast
 <h2 id="employment">Employment</h2>
 
 <dl class="dl-horizontal curriculum-vitae">
+  <dt>2022</dt>
+  <dd>
+    <ul class="list-unstyled">
+      <li><strong>Software Engineer at Ackham Capital</strong> (Singapore)</li>
+      <li>Main developer of a crypto-currency arbitrage trading bot. Bot was written mainly in Rust, with connectors to EVM nodes and the Binance API implemented as TypeScript gRPC servers.</li>
+    </ul>
+  </dd>
   <dt>2021</dt>
   <dd>
     <ul class="list-unstyled">
-      <li><strong>Algorithms Engineer</strong> at <a href="https://www.synchronous.ai/">Synchronous Technologies</a></li>
+      <li><strong>Algorithms Engineer at <a href="https://www.synchronous.ai/">Synchronous Technologies</a></strong> (Singapore)</li>
       <li>Developed fast algorithms for factory scheduling. Wrote code in Julia, Python and C++. Created and contributed to various open-source Julia packages.</li>
     </ul>
   </dd>
   <dt>2019 - 2021</dt>
   <dd>
     <ul class="list-unstyled">
-      <li><strong>Peng Tsu Ann Assistant Professor</strong> at National University of Singapore</li>
+      <li><strong>Peng Tsu Ann Assistant Professor at National University of Singapore</strong></li>
       <li>Research: Fast solvers for sparse linear systems</li>
       <li>Teaching: <a href="https://github.com/ettersi/ComputationalMathematics">Computational Mathematics</a>, <a href="https://github.com/ettersi/NumericalAnalysisII">Numerical Analysis</a></li>
     </ul>
@@ -103,7 +110,7 @@ Mathematician, Software Engineer and Julia Enthusiast
   <dt>2015 - 2019</dt>
   <dd>
     <ul class="list-unstyled">
-      <li><strong>PhD in Mathematics</strong> at University of Warwick (United Kingdom)</li>
+      <li><strong>PhD in Mathematics at University of Warwick</strong> (United Kingdom)</li>
       <li>Thesis: <a href="pdf/phd.pdf">Polynomial and Rational Approximation for Electronic Structure Calculations</a></li>
       <li>Advisor: <a href="http://homepages.warwick.ac.uk/staff/C.Ortner">Christoph Ortner</a></li>
     </ul>
@@ -111,7 +118,7 @@ Mathematician, Software Engineer and Julia Enthusiast
   <dt>2013 - 2015</dt>
   <dd>
     <ul class="list-unstyled">
-      <li><strong>MSc in Computational Science and Engineering</strong> at ETH Zurich (Switzerland)</li>
+      <li><strong>MSc in Computational Science and Engineering at ETH Zurich</strong> (Switzerland)</li>
       <li>Thesis: <a href="pdf/msc.pdf">Parallel Tensor-Formatted Numerics for the Chemical Master Equation</a></li>
       <li>Advisors: <a href="https://www.linkedin.com/in/rngantner">Robert Gantner</a>, <a href="http://web.stanford.edu/~kazeev/">Vladimir Kazeev</a>, <a href="http://www.sam.math.ethz.ch/~schwab">Christoph Schwab</a></li>
     </ul>
@@ -119,7 +126,7 @@ Mathematician, Software Engineer and Julia Enthusiast
   <dt>2010 - 2013</dt>
   <dd>
     <ul class="list-unstyled">
-      <li><strong>BSc in Computational Science and Engineering</strong> at ETH Zurich (Switzerland)</li>
+      <li><strong>BSc in Computational Science and Engineering at ETH Zurich</strong> (Switzerland)</li>
       <li>Thesis: <a href="pdf/bsc.pdf">FFT-Based Ridgelets For Radiative Transport</a></li>
       <li>Advisors: Axel Obermeier, <a href="http://mat.univie.ac.at/~grohs/">Philipp Grohs</a></li>
     </ul>
@@ -182,31 +189,6 @@ Mathematician, Software Engineer and Julia Enthusiast
 
 </li>
 <li><div class="reference">
-  <div id="EDK16"><div class="csl-block"><b>Erratum: Two-level QTT-Tucker format for optimized tensor calculus</b></div><div class="csl-block">S. Etter, S. Dolgov, B.N. Khoromskij</div><div class="csl-block">SIAM Journal on Matrix Analysis and Applications (2016), 37:2, 818–822</div></div>
-
-  <ul class="list-inline">
-  
-  <li><a data-toggle="collapse" href="#EDK16_abstract" onclick="$(this).toggleClass('active')">Abstract</a></li>
-  
-  
-  <li><a href="/linked/EDK16.pdf">PDF</a></li>
-  
-  
-  
-  <li><a href="http://doi.org/10.1137/15M104089X">DOI</a></li>
-  
-  </ul>
-</div>
-
-
-<div class="collapse" id="EDK16_abstract">
-  <div class="well">
-    We prove by counterexample that the bound on the rounding error given in Theorem 5.2 of [Dolgov and Khoromskij, SIAM J. Matrix Anal. Appl., 34(2013), pp. 593-623] does not hold in general. A correct version of the error bound as well as a modified rounding algorithm for which the original bound holds are presented.
-  </div>
-</div>
-
-</li>
-<li><div class="reference">
   <div id="Ett16"><div class="csl-block"><b>Parallel ALS algorithm for solving linear systems in the hierarchical Tucker representation</b></div><div class="csl-block">S. Etter</div><div class="csl-block">SIAM Journal on Scientific Computing (2016), 38:4, A2585–A2609</div></div>
 
   <ul class="list-inline">
@@ -227,6 +209,31 @@ Mathematician, Software Engineer and Julia Enthusiast
 <div class="collapse" id="Ett16_abstract">
   <div class="well">
     Tensor network formats are an efficient tool for numerical computations in many dimensions, yet even this tool often becomes too time- and memory-consuming for a single compute node when applied to problems of scientific interest. Intending to overcome such limitations, we present and analyze a parallelization scheme for algorithms based on the hierarchical Tucker representation which distributes the network vertices and their associated computations over a set of distributed-memory processors. We then propose a modified version of the alternating least squares algorithm for solving linear systems amenable to parallelization according to the aforementioned scheme, and highlight technical considerations important for obtaining an efficient and stable implementation. Our numerical experiments support the theoretical assertion that the parallel scaling of this algorithm is constrained only by the dimensionality and the rank uniformity of the targeted problem.
+  </div>
+</div>
+
+</li>
+<li><div class="reference">
+  <div id="EDK16"><div class="csl-block"><b>Erratum: Two-level QTT-Tucker format for optimized tensor calculus</b></div><div class="csl-block">S. Etter, S. Dolgov, B.N. Khoromskij</div><div class="csl-block">SIAM Journal on Matrix Analysis and Applications (2016), 37:2, 818–822</div></div>
+
+  <ul class="list-inline">
+  
+  <li><a data-toggle="collapse" href="#EDK16_abstract" onclick="$(this).toggleClass('active')">Abstract</a></li>
+  
+  
+  <li><a href="/linked/EDK16.pdf">PDF</a></li>
+  
+  
+  
+  <li><a href="http://doi.org/10.1137/15M104089X">DOI</a></li>
+  
+  </ul>
+</div>
+
+
+<div class="collapse" id="EDK16_abstract">
+  <div class="well">
+    We prove by counterexample that the bound on the rounding error given in Theorem 5.2 of [Dolgov and Khoromskij, SIAM J. Matrix Anal. Appl., 34(2013), pp. 593-623] does not hold in general. A correct version of the error bound as well as a modified rounding algorithm for which the original bound holds are presented.
   </div>
 </div>
 
@@ -259,12 +266,12 @@ Mathematician, Software Engineer and Julia Enthusiast
 
 <h3 id="talks-and-posters">Talks and Posters</h3>
 <ul class="bibliography"><li><div class="reference">
-  <div id="LabelledModes"><div class="csl-block"><b>Labelled Modes - A New Notation for Tensor Networks</b></div><div class="csl-block">GAMM Annual Meeting, Weimar, Germany (2017)</div></div>
+  <div id="ExponentiallyLocalisedMatrices"><div class="csl-block"><b>Exponentially Localised Matrices</b></div><div class="csl-block">British Applied Mathematics Colloquium (2017)</div></div>
 
   <ul class="list-inline">
   
   
-  <li><a href="/linked/LabelledModes.pdf">PDF</a></li>
+  <li><a href="/linked/ExponentiallyLocalisedMatrices.pdf">PDF</a></li>
   
   
   
@@ -274,12 +281,12 @@ Mathematician, Software Engineer and Julia Enthusiast
 
 </li>
 <li><div class="reference">
-  <div id="ExponentiallyLocalisedMatrices"><div class="csl-block"><b>Exponentially Localised Matrices</b></div><div class="csl-block">British Applied Mathematics Colloquium (2017)</div></div>
+  <div id="LabelledModes"><div class="csl-block"><b>Labelled Modes - A New Notation for Tensor Networks</b></div><div class="csl-block">GAMM Annual Meeting, Weimar, Germany (2017)</div></div>
 
   <ul class="list-inline">
   
   
-  <li><a href="/linked/ExponentiallyLocalisedMatrices.pdf">PDF</a></li>
+  <li><a href="/linked/LabelledModes.pdf">PDF</a></li>
   
   
   
@@ -307,7 +314,7 @@ Mathematician, Software Engineer and Julia Enthusiast
 
             <div class="text-center" style="margin-top: 4rem; margin-bottom: 4rem; line-height: 1.4;">
                 <small class="text-muted">
-                    Last updated on 08 October 2021.
+                    Last updated on 15 November 2022.
                 </small>
             </div>
         </div>
